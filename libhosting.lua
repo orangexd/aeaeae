@@ -2589,7 +2589,7 @@ function library:Init()
         self.main.Size = UDim2.new(0, 16 + ((#tab.columns < 2 and 2 or #tab.columns) * 239), 0, 600)
         self.currentTab = tab
         tab.button.TextColor3 = library.flags["Menu Accent Color"]
-        print(self.tabHighlight.Parent)
+        print(self.tabHighlight.Parent.Name)
         self.tabHighlight:TweenPosition(UDim2.new(0, tab.button.Position.X.Offset, 0, 50), "Out", "Quad", 0.2, true)
         self.tabHighlight:TweenSize(UDim2.new(0, tab.button.AbsoluteSize.X, 0, -1), "Out", "Quad", 0.1, true)
         for _, column in next, tab.columns do
